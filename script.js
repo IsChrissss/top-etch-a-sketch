@@ -1,3 +1,9 @@
+const btn = document.createElement("button");
+btn.classList.add("sizeBtn");
+btn.textContent = "CLICK HERE!"
+btn.style.cssText = "width: 100px; height: 50px"
+document.body.appendChild(btn);
+
 const container = document.querySelector('.container');
 
 for (let i = 0; i < 16; i++) {
