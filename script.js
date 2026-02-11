@@ -2,7 +2,7 @@
 const btn = document.createElement("button");
 btn.classList.add("sizeBtn");
 btn.textContent = "CLICK HERE!"
-btn.style.cssText = "width: 100px; height: 50px"
+btn.style.cssText = "width: 100px; height: 50px; border-radius: 3px;}"
 document.body.appendChild(btn);
 
 btn.addEventListener("click", () => {
