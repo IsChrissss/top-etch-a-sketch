@@ -9,3 +9,13 @@ for (let i = 0; i < 16; i++) {
 }
 
 const squares = document.querySelectorAll('.square');
+
+for (const square of squares) {
+    square.addEventListener('mouseover', () => {
+        square.style.backgroundColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+    });
+}
+
+function randomColor() {
+    return Math.floor(Math.random() * 256)
+}
